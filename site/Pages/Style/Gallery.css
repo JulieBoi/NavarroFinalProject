@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;  color: rgb(0, 0, 0);   
+    font-family: 'Centry Gothic', 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+}
+body{ width: 100% auto;}
+
+#wrapper, header,footer{
+    width: 95% auto; 
+    margin: 10px auto;
+    
+}
+ 
+header, footer{
+    height: Auto;
+    background-color: skyblue;
+    width:100% auto;
+    padding: 15px;
+}
+
+.grid-container,.Information{ 
+    width: 100% ;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 5px;
+    
+}
+
+.grid-container>.col-1{
+    height: auto;
+    background-color: tomato;
+}
+
+
+
+.Fpic{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+}
+
+.navis, .navis:active{
+    text-decoration: none;
+    color: #424949;
+    display: inline-block;
+    width: 150px;
+    background-color:rgb(250, 206, 175);
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+.navis:hover{
+    color:cornsilk;
+    background-color:brown
+}
+
+.Information{
+    background-color: wheat;
+}
+
+.grid-container1 { /* 4 containers contains infos*/
+    width: 100% ;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.grid-container1>.col-1{/* 4 containers contains infos*/
+    height: auto;
+    background-color: rgb(181, 71, 255);
+}
+
+.navis, .navis:active{
+    text-decoration: none;
+    color: #424949;
+    display: inline-block;
+    width: 150px;
+    background-color:rgb(250, 206, 175);
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+.navis:hover{
+    color:cornsilk;
+    background-color:brown
+}
+
+.Information{
+    background-color: wheat;
+}
+

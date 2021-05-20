@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;  color: rgb(0, 0, 0);   
+    font-family: 'Centry Gothic', 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+}
+body{ width: 100% auto;}
+
+#wrapper, header,footer{
+    width: 95% auto; 
+    margin: 10px auto;
+    
+}
+ 
+header, footer{
+    height: Auto;
+    background-color: skyblue;
+    width:100% auto;
+    padding: 15px;
+}
+
+.grid-container{ 
+    width: auto ;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 5px;
+}
+
+.grid-container>.col-1{
+    height: 600px;
+    background-color: rgb(52, 104, 202);
+}
+.container{ 
+    width: 50% ;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 5px;
+    height: 500px;
+    background-color: rgb(253, 253, 253);
+    margin-top: 25px;
+    margin-left: 25%;
+    text-align: center;
+}
+
+
+
+.navis, .navis:active{
+    text-decoration: none;
+    color: #424949;
+    display: inline-block;
+    width: 150px;
+    background-color:rgb(250, 206, 175);
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+.navis:hover{
+    color:cornsilk;
+    background-color:brown
+}
+
+.grid-container1 { /* 4 containers contains infos*/
+    width: 100% ;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.grid-container1>.col-1{/* 4 containers contains infos*/
+    height: auto;
+    background-color: rgb(181, 71, 255);
+}
+
+.Col-2{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+
+.navis, .navis:active{
+    text-decoration: none;
+    color: #424949;
+    display: inline-block;
+    width: 150px;
+    background-color:rgb(250, 206, 175);
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+.navis:hover{
+    color:cornsilk;
+    background-color:brown
+}
+
+.Information{
+    background-color: wheat;
+}
+
+

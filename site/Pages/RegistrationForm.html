@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NavarroFinalProject</title>
+        <meta charset="utf-8"> 
+        <meta name="author" content="J.Navarro" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style\RegistrationForm.css">
+    </head>
+
+    <body>
+        <div id="Wrapper">
+            <header>
+                <Center><h1>Regristration Form</h1></Center>
+            </header>
+
+            
+            <div class="grid-container1">
+                <div class="col-1 col1">
+                    <center><h2><a class="navis" href="../Pages/AboutMe.html">About Me</a></h2></center>
+                </div>
+                <div class="col-1 col2">
+                    <center><h2><a class="navis" href="../Pages/Gallery.html">Gallery</a></h2></center>
+                </div>
+                <div class="col-1 col3">
+                    <center><h3><a class="navis" href="../Pages/RegistrationForm.html">Registration Form</a></h3></center>
+                </div>
+                <div class="col-1 col4">
+                    <center><h2><a class="navis" href="../index.html">Home Page</a></h2></center>
+                </div>
+                <div class="col-1 col5">
+                    <center><h2><a class="navis" href="../Pages/Reference.html">References</a></h2></center>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="col-1 col1">
+                    a
+                    <div class="container">
+                       <h2> Creat Your Account</h2>
+                       <div class="Col-2 col2">
+                    <form>
+                        <table>
+                        <tr><!--TEXT-->
+                            <td><label for="Fname">Username:</label></td>
+                            <td><input type="text" id="Fname" size="50" required></td> 
+                        </tr><!--END TEXT-->
+                        <tr><!--password-->
+                            <td><label for="Password">Password:</label></td>
+                            <td><input type="password" id="password" size="50" maxlength="15" minlength="8" required></td> 
+                        </tr><!--END password-->
+                        <tr><!--Patter-->
+                            <td><label for="Phone Number">Phone Number</label></td>
+                            <td><input type="tel" id="Phone Number" size="50" required placeholder="123-444-1234" patter="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td> 
+                        </tr><!--END Patter-->
+                        <tr><!--gender-->
+                            <td><label for="Gender">Gender</label></td>
+                            <td>
+                                <select type="gender" id="Gender" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                </select>
+                            </td> 
+                        </tr><!--END gender-->
+                        <tr><!--DATE-->
+                            <td><label for="bday">Birthday</label></td>
+                            <td><input type="date" id="bday" min="2000-01-01" max="2020-01-01" required></td> 
+                        </tr><!--END DATE-->
+                        </table>
+                    </form>
+                       </div>
+                       <div clas="Button">
+                        <center><h2><a class="navis" href="">Sign Up</a></h2></center>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <nav>
+                    <a class="navis" href="..\index.html">Home</a>
+                </nav>
+            </footer>
+        </div>
+
+    </body>
+</html>
