@@ -90,3 +90,35 @@ header, footer{
     background-color: wheat;
 }
 
+@media screen and (max-width:1024px) {
+
+}
+@media  screen and (max-width:768px) {
+    .grid-container1>.col3{
+        width: auto;
+        grid-column-end: span 2;
+        grid-template-columns: 100%;
+        
+    }
+
+    .grid-container1{
+        grid-template-columns: 49% 50% ;
+    }
+
+    .Fpic{
+        height: auto;
+        width: 90%;
+        padding-right: 10px;
+        
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .grid-container>.col-1,.Information{
+        grid-column-end: span 4;
+    }
+
+}
+
+

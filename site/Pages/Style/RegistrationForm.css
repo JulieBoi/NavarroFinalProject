@@ -31,30 +31,18 @@ header, footer{
 .container{ 
     width: 50% ;
     display: grid;
-    grid-template-columns: auto ;
-    grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
     height: 500px;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     margin-top: 25px;
     margin-left: 25%;
     text-align: center;
+    
 }
 
-
-
-.navis, .navis:active{
-    text-decoration: none;
-    color: #424949;
-    display: inline-block;
-    width: 150px;
-    background-color:rgb(250, 206, 175);
+.container>.Col-2{
     text-align: center;
-    padding: 3px;
-    border-radius: 8px;
-}
-.navis:hover{
-    color:cornsilk;
-    background-color:brown
 }
 
 .grid-container1 { /* 4 containers contains infos*/
@@ -96,4 +84,46 @@ header, footer{
     background-color: wheat;
 }
 
+@media screen and (max-width:1024px) {
 
+}
+@media  screen and (max-width:768px) {
+    .grid-container1>.col3{
+        width: auto;
+        grid-column-end: span 2;
+        grid-template-columns: 100%;
+        
+    }
+
+    .grid-container1{
+        grid-template-columns: 49% 50% ;
+    }
+
+    .Fpic{
+        height: auto;
+        width: 90%;
+        padding-right: 10px;
+        
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .grid-container1>.col3{
+        width: auto;
+        grid-column-end: span 2;
+        grid-template-columns: 100%;
+        
+    }
+
+    .grid-container1{
+        grid-template-columns: 49% 50% ;
+    }
+
+    .Fpic{
+        height: auto;
+        width: 90%;
+        padding-right: 10px;
+        
+    }
+}

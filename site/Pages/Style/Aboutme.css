@@ -26,16 +26,17 @@ header, footer{
 }
 
 .grid-container>.col-1{
+    width: 100% auto;
     height: auto;
+    grid-template-columns: auto;
     background-color: tomato;
 }
 
-
-
 .Fpic{
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    height: 90%;
     margin: 15px;
+    padding: auto;
 }
 
 .grid-container1 { /* 4 containers contains infos*/
@@ -71,6 +72,55 @@ header, footer{
     background-color: wheat;
 }
 
+@media screen and (max-width:1024px) {
 
+    .Fpic{
+        height: auto;
+        width: 170px;
+        padding: auto;
+        
+    }
+    .grid-container,.Information{ 
+        width: 100% ;
+        display: grid;
+        grid-template-columns: 21% auto auto auto  ;
+        grid-gap: 5px;
+        
+    }
+    
+    .grid-container>.col-1{
+        width: auto;
+        height: auto;
+        grid-template-columns: auto;
 
+    }
 
+}   
+
+@media  screen and (max-width:768px) {
+    .grid-container1>.col3{
+        width: auto;
+        grid-column-end: span 2;
+        grid-template-columns: 100%;
+        
+    }
+
+    .grid-container1{
+        grid-template-columns: 49% 50% ;
+    }
+
+    .Fpic{
+        height: auto;
+        width: 90%;
+        padding-right: 10px;
+        
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .grid-container>.col-1,.Information{
+        grid-column-end: span 4;
+    }
+
+}

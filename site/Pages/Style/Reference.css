@@ -57,7 +57,7 @@ header, footer{
     background-color: wheat;
 }
 
-.grid-container1 { /* 4 containers contains infos*/
+.grid-container1 { 
     width: 100% ;
     display: grid;
     grid-template-columns: auto auto auto auto auto ;
@@ -66,7 +66,7 @@ header, footer{
     margin-bottom: 5px;
 }
 
-.grid-container1>.col-1{/* 4 containers contains infos*/
+.grid-container1>.col-1{
     height: auto;
     background-color: rgb(181, 71, 255);
 }
@@ -86,7 +86,42 @@ header, footer{
     background-color:brown
 }
 
-.Information{
-    background-color: wheat;
+@media screen and (max-width:1024px) {
+
+    
+    .grid-container>.pewds{
+        display: grid;
+        grid-column-end: span 2;
+        
+
+    }
+
+}   
+
+@media  screen and (max-width:768px) {
+    .grid-container1>.col3{
+        width: auto;
+        grid-column-end: span 2;
+        grid-template-columns: 100%;
+        
+    }
+
+    .grid-container1{
+        grid-template-columns: 49% 50% ;
+    }
+
+    .Fpic{
+        height: auto;
+        width: 90%;
+        padding-right: 10px;
+        
+    }
+
 }
 
+@media screen and (max-width:480px){
+    .grid-container>.col-1,.Information{
+        grid-column-end: span 4;
+    }
+
+}
