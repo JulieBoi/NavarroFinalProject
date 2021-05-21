@@ -4,13 +4,13 @@
 }
 body{ width: 100% auto;}
 
-#wrapper, header, footer{
+#wrapper, header{
     width: auto; 
     margin: 10px auto;
     
 }
  
-header, footer{
+header{
     height: auto;
     background-color: skyblue;
     width:100% auto;
